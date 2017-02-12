@@ -207,6 +207,7 @@ static inline s64 timekeeping_get_ns(struct tk_read_base *tkr)
 	*/
 
 	/* kernel patch from with commit ID:35a4933a895927990772ae96fdcfd2f806929ee2 */
+
 	nsec = (delta * tkr->mult + tkr->xtime_nsec) >> tkr->shift;
 
 	/* If arch requires, add in get_arch_timeoffset() */
