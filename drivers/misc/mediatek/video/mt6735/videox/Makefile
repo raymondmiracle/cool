@@ -48,6 +48,8 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/include/     \
 
 ccflags-$(CONFIG_MTK_LCM) += -I$(srctree)/drivers/misc/mediatek/lcm/inc
 
+obj-$(CONFIG_MTK_KCAL_CTRL) += mtk_kcal_ctrl.o
+
 ccflags-y += -I$(srctree)/drivers/staging/android/ion \
              -I$(srctree)/drivers/staging/android/ion/mtk
 
@@ -70,3 +72,4 @@ ifeq ($(MTK_MIRAVISION_SUPPORT), yes)
 endif
 
 ccflags-$(CONFIG_MTK_LCM_DEVICE_TREE_SUPPORT) += -DMTK_LCM_DEVICE_TREE_SUPPORT
+

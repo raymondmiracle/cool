@@ -143,7 +143,9 @@ static int disp_gamma_set_lut(const DISP_GAMMA_LUT_T __user *user_gamma_lut, voi
 		return -EFAULT;
 	}
 
-#ifdef CONFIG_MTK_VIDEOX_CYNGN_LIVEDISPLAY
+
+#ifdef CONFIG_MTK_KCAL_CTRL
+>>>>>>> eb7de74... MT6797: RGB color control
 	if (virt_addr_valid(user_gamma_lut)) {
 		memcpy(gamma_lut, user_gamma_lut, sizeof(DISP_GAMMA_LUT_T));
 	} else
