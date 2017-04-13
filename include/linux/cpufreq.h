@@ -499,7 +499,7 @@ extern struct cpufreq_governor cpufreq_gov_nightmare;
 extern struct cpufreq_governor cpufreq_gov_nebula;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_nebula)
 #endif
-#endif
+
 
 /*********************************************************************
  *                     FREQUENCY TABLE HELPERS                       *
