@@ -14,7 +14,8 @@
 #include "m4u.h"
 #include "./mt6735/m4u_reg.h"
 #include "../2.0/m4u_pgtable.h"
-#include "./mt6735/m4u_platform.h"
+#include "mt6735/m4u_platform.h"
+#include "mt6753/m4u_platform.h"
 
 #define M4UMSG(string, args...)	pr_err("M4U"string, ##args)
 #define M4UINFO(string, args...) pr_debug("M4U"string, ##args)
