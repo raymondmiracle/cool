@@ -1,1 +1,1 @@
-# android_kernel_coolpad_CP8298_I00
+# android_kernel_
