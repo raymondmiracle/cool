@@ -18,8 +18,6 @@ cp -r arch/arm64/boot/Image.gz-dtb zipitbro/
 cd zipitbro
 mv Image.gz-dtb zImage 
 zip -r ZeroAddition_Kernel_CP8298_I00.zip *
-curl --ftp-pasv -T ZeroAddition_Kernel_CP8298_I00.zip ftp://Reapergod:bD0o2MGQYYjZ@uploads.androidfilehost.com 
-rm -r ZeroAddition_Kernel_CP8298_I00.zip
 cd ..
 echo "build compiled and uploaded in AFH account inport and download it "
 echo "╔════╗╔═══╗╔═══╗╔═══╗╔═══╗╔═══╗╔═══╗╔══╗╔════╗╔══╗╔═══╗╔═╗─╔╗"
